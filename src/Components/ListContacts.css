@@ -1,0 +1,123 @@
+body {
+  background-color: #d4d4d4;
+  padding: 20px;
+}
+.main-div {
+  width: 40%;
+  border-radius: 50px;
+  background: #777585;
+  margin: 0 auto;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+.right-div {
+  width: 150px;
+  height: 20px;
+  background: lightgray;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-40px, -50px);
+}
+
+.left-div {
+  width: 20px;
+  height: 20px;
+  background: lightgray;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-70px, -50px);
+}
+.contact-list {
+  list-style: none;
+  width: 90%;
+  background-color: white;
+  padding: 5px;
+  margin: 0 auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.contact-list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 1px;
+  margin-bottom: 5px;
+  border: 1px solid #3b5998;
+
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-image {
+  width: 50%;
+  float: left;
+  margin-right: 50px;
+}
+
+.contact-details {
+  margin-left: 10px;
+  width: 50%;
+  float: left;
+}
+
+.contact-details h3 {
+  color: #3b5998;
+}
+.contact-details h6 {
+  color: darkgray;
+}
+
+.main-search-div {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding: 5px;
+  background-color: #3b5998;
+  margin: 0 auto;
+}
+
+.title {
+  position: absolute;
+  left: 44%;
+  padding-top: 60px;
+  color: white;
+}
+.main-search-div .search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 150px;
+  background-color: #3b5998;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 60%;
+  border-radius: 5px;
+  margin: 0 auto;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.bottom-div {
+  width: 150px;
+  height: 25px;
+  background: lightgray;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-60px, 50px);
+}
