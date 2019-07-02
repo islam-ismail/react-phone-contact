@@ -30,12 +30,12 @@ class ListContacts extends Component {
           <div className="left-div" />
           <div className="main-search-div">
             <div className="title">
-              <h3>Contact List</h3>
+              <h2>Contact List</h2>
             </div>
             <div className="search-bar">
               <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Search contacts..."
                 value={this.state.searchTerm}
                 onChange={this.getData}
               />
@@ -43,23 +43,26 @@ class ListContacts extends Component {
           </div>
           <ol className="contact-list">
             {filterContacts.map((contact, index) => (
-              <li key={index}>
-                <div
-                  className="contact-image"
-                  style={{
-                    backgroundImage: `url(${contact.picture.large})`,
-                    width: "100px",
-                    height: "100px",
-                    borderRadius: "100px"
-                  }}
-                />
-                <div className="contact-details">
-                  <h3>
-                    {contact.name.first} {contact.name.last}
-                  </h3>
-                  <h6>{contact.email}</h6>
-                </div>
-              </li>
+              <div>
+                <li key={index}>
+                  <div
+                    className="contact-image"
+                    style={{
+                      backgroundImage: `url(${contact.picture.large})`,
+                      width: "100px",
+                      height: "100px",
+                      borderRadius: "100px"
+                    }}
+                  />
+                  <div className="contact-details">
+                    <h3>
+                      {contact.name.first} {contact.name.last}
+                    </h3>
+                    <h6>{contact.email}</h6>
+                  </div>
+                </li>
+                <hr className="line" />
+              </div>
             ))}
           </ol>
           <div className="bottom-div" />

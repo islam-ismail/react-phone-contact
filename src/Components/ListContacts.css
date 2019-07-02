@@ -3,7 +3,7 @@ body {
   padding: 20px;
 }
 .main-div {
-  width: 40%;
+  width: 70%;
   border-radius: 50px;
   background: #777585;
   margin: 0 auto;
@@ -12,25 +12,25 @@ body {
 }
 
 .right-div {
-  width: 150px;
+  width: 15%;
   height: 20px;
   background: lightgray;
   border-radius: 10px;
   position: absolute;
   left: 50%;
   right: 50%;
-  transform: translate(-40px, -50px);
+  transform: translate(-60px, -50px);
 }
 
 .left-div {
-  width: 20px;
+  width: 1.5%;
   height: 20px;
   background: lightgray;
   border-radius: 20px;
   position: absolute;
   left: 50%;
   right: 50%;
-  transform: translate(-70px, -50px);
+  transform: translate(-90px, -50px);
 }
 .contact-list {
   list-style: none;
@@ -52,10 +52,13 @@ body {
   background-color: white;
   padding: 1px;
   margin-bottom: 5px;
-  border: 1px solid #3b5998;
-
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
+}
+
+.contact-list .line {
+  width: 100%;
+  border-top: 2px solid #777585;
 }
 
 .contact-image {
@@ -65,7 +68,6 @@ body {
 }
 
 .contact-details {
-  margin-left: 10px;
   width: 50%;
   float: left;
 }
@@ -82,6 +84,8 @@ body {
   flex-direction: row;
   width: 90%;
   padding: 5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   background-color: #3b5998;
   margin: 0 auto;
 }
@@ -112,12 +116,169 @@ body {
 }
 
 .bottom-div {
-  width: 150px;
+  width: 15%;
   height: 25px;
   background: lightgray;
   border-radius: 10px;
   position: absolute;
   left: 50%;
   right: 50%;
-  transform: translate(-60px, 50px);
+  transform: translate(-80px, 50px);
+}
+
+/* Media Query */
+@media (max-width: 991px) {
+  .right-div {
+    width: 20%;
+    transform: translate(-70px, -50px);
+  }
+
+  .left-div {
+    width: 2%;
+    transform: translate(-100px, -50px);
+  }
+
+  .bottom-div {
+    width: 20%;
+    transform: translate(-90px, 30px);
+  }
+}
+
+@media (max-width: 768px) {
+  .right-div {
+    width: 25%;
+    transform: translate(-70px, -40px);
+  }
+  .left-div {
+    width: 3%;
+    transform: translate(-100px, -40px);
+  }
+
+  .bottom-div {
+    width: 25%;
+    transform: translate(-90px, 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .main-div {
+    width: 80%;
+  }
+  .right-div {
+    width: 28%;
+    transform: translate(-70px, -35px);
+  }
+  .left-div {
+    transform: translate(-100px, -35px);
+  }
+
+  .bottom-div {
+    width: 28%;
+    transform: translate(-90px, 15px);
+  }
+
+  .main-search-div .title {
+    left: 40%;
+    padding-top: 40px;
+  }
+
+  .main-search-div .title h2 {
+    font-size: 20px;
+  }
+  .main-search-div .search-bar {
+    padding-top: 100px;
+  }
+
+  .main-div .contact-list li .contact-image {
+    margin-right: 10px;
+  }
+  .main-div .contact-list li .contact-details h3 {
+    font-size: 15px;
+  }
+
+  .main-div .contact-list li .contact-details h6 {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 500px) {
+  .right-div {
+    width: 25%;
+    transform: translate(-50px, -30px);
+  }
+  .left-div {
+    width: 4%;
+    transform: translate(-80px, -30px);
+  }
+
+  .bottom-div {
+    width: 25%;
+    transform: translate(-70px, 10px);
+  }
+
+  .main-div .contact-list li .contact-image {
+    margin-right: 5px;
+  }
+  .main-div .contact-list li .contact-details h3 {
+    font-size: 10px;
+  }
+
+  .main-div .contact-list li .contact-details h6 {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-div {
+    width: 100%;
+  }
+  .right-div {
+    width: 25%;
+    height: 15px;
+    transform: translate(-30px, -25px);
+  }
+  .left-div {
+    width: 4%;
+    height: 15px;
+    transform: translate(-50px, -25px);
+  }
+
+  .bottom-div {
+    width: 25%;
+    height: 15px;
+    transform: translate(-50px, 10px);
+  }
+
+  .main-div .contact-list {
+    overflow-x: hidden;
+  }
+
+  .main-search-div .title h2 {
+    font-size: 15px;
+  }
+  .main-div .contact-list li .contact-details h6 {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .right-div {
+    width: 20%;
+    height: 10px;
+    transform: translate(-30px, -20px);
+  }
+  .left-div {
+    width: 3%;
+    height: 10px;
+    transform: translate(-50px, -20px);
+  }
+
+  .bottom-div {
+    width: 25%;
+    height: 10px;
+    transform: translate(-50px, 5px);
+  }
+
+  .main-search-div .title {
+  }
 }
